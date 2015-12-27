@@ -1,0 +1,16 @@
+Name = $HOST
+
+# IPv6 + IPv4
+AddressFamily = any
+
+# Tinc nur über das öffentliche Netz laufen lassen
+BindToInterface = eth0
+Broadcast = mst
+ConnectTo = gw04
+ConnectTo = gw05
+
+Mode = switch
+Forwarding = kernel
+DirectOnly = no
+GraphDumpFile = /tmp/tinc.ffsL3.dotty
+Mode = router
