@@ -1,0 +1,21 @@
+
+-----BEGIN RSA PUBLIC KEY-----
+MIICCgKCAgEArQbLQ1Y0PNckLa4SYaQFFBnx4Mkln8fP7OueFljf1EAELgrlVX90
+NrP3kqDGwyNcxpILhPF/3chLbFUmdeGSZnUChU0o0tvX8VvyerIyI7UawgOONzHn
+iE/qrRWSsH870dEu92JeQBDighPc5rPwaU/+zKC8FrsRG5coj7sUpPR4ZXod+47Q
+VNoycOPbXIfHGhutFvkNnylh5cG3T/kc8l4Qs89yPoXS1vJaz1d3xHA328G8MDQL
+aAOi9P93AMVa31DEYvrhrdq4ACMPv2y6Tr/FjoBKqQzwy6d3pdSp/aSdlI5OTo4M
+lhL3QlrVI09Vagv7cqWsIBzqDcflzVzB6ORckGpk33Ctvlpxi9futvbXYTN3q7q1
+cQLDk+x7/hPb6Crw8mK6xRTtZxfVS2m8y3B5F9XZBh4CZrpRoDNnEQqdiz3jjASH
+30bhDCV2imiOJT11YUsxBkfnuNzvLFvj6ocmTXW2B6Lp8hL1EGNiTMsFqEcaEgR5
++GSn9qCsTlF/PidqMj7JDrW2kxfItX1+HUSfi9D3L2TAfaqQgHnEk62qDoW9Fs0c
+g1/fWkZf7vaS+GPzqy6WTllRjaQAx6dPFg5EG1A2X9b0Eoew1yA7xSwVzNJQuZAa
+vkMx7Jm3u46KoRqzge2ZO95ixr+BmMkxcr2f8A0egY0U9Wuxmab7vu8CAwEAAQ==
+-----END RSA PUBLIC KEY-----
+PMTUDiscovery = yes
+Digest = sha256
+ClampMSS = yes
+IndirectData = yes
+DirectOnly = no
+Address = gw04.freifunk-stuttgart.de
+Port = 1104
