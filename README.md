@@ -26,11 +26,11 @@ tincd -n ffsL3 -K 4096
 if [ x"$TINCBASE" != x"/etc/tinc" ]; then
     rsync -rlHpogDtSvx /etc/tinc/ffsL3/hosts/$HOSTNAME  $TINCBASE/ffsL3/hosts/
 fi
-# Wenn man einen github Account hat, sonst den Key jemandem geben der einen hat.
+ # Wenn man einen github Account hat, sonst den Key jemandem geben der einen hat.
 git add hosts/$HOSTNAME
 git commit -m "hosts/$HOSTNAME"
 git push
-# Port pro GW verschieden, damit ein GW auch hinter NAT mit UDP funktioniert
+ # Port pro GW verschieden, damit ein GW auch hinter NAT mit UDP funktioniert
 cat <<EOF >>hosts/$HOSTNAME
 PMTUDiscovery = yes
 Digest = sha256
