@@ -2,6 +2,8 @@ tinc-l3
 ====
 Tinc-Repository von Freifunk Stuttgart.
 Wer noch kein konfiguriertes tinc hat, kann direkt in /etc/tinc arbeiten, das dazu vorher loeschen, ansonsten TINCBASE anders setzen und bei Dateinamen aufpassen.
+Wenn neue Gateways dazu kommen / Dinge geaender werden muss das lokale Repository  aktualisiert werden, damit die Keys bekannt sind.
+
 TINCBASE=/etc/tinc
 if [ -d "$TINCBASE" ]; then
     rm -rf $TINCBASE
@@ -12,7 +14,11 @@ if [ x"$TINCBASE" != x"/etc/tinc" ]; then
 fi
 if [ ! -e /etc/tinc/ffsL3/tinc.conf ]; then
     ln -s $TINCBASE/ffsL3/tinc.conf.sample /etc/tinc/ffsL3/tinc.conf
+fi
+if [ ! -e /etc/tinc/ffsL3/subnet-up ]; then
     ln -s $TINCBASE/ffsL3/subnet-up.sample /etc/tinc/ffsL3/subnet-up
+fi
+if [ ! -e /etc/tinc/ffsL3/subnet-down ]; then
     ln -s $TINCBASE/ffsL3/subnet-down.conf.sample /etc/tinc/ffsL3/subnet-down
 fi
 cd $TINCBASE/ffsL3
@@ -20,6 +26,10 @@ tincd -n ffsL3 -K 4096
 if [ x"$TINCBASE" != x"/etc/tinc" ]; then
     rsync -rlHpogDtSvx /etc/tinc/ffsL3/hosts/$HOSTNAME  $TINCBASE/ffsL3/hosts/
 fi
+# Wenn man einen github Account hat, sonst den Key jemandem geben der einen hat.
+git add hosts/$HOSTNAME
+git commit -m "hosts/$HOSTNAME"
+git push
 # Port pro GW verschieden, damit ein GW auch hinter NAT mit UDP funktioniert
 cat <<EOF >>hosts/$HOSTNAME
 PMTUDiscovery = yes
