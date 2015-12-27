@@ -1,0 +1,21 @@
+
+-----BEGIN RSA PUBLIC KEY-----
+MIICCgKCAgEAqL1P463VTlMCEavOSqhI0+63qa89rhT9Rq1thplCkxzc+endCUUk
+g8KNs9K3VAI63vhZYHnnuXoqsS8ZJNyvpqQyPl0bsN26kVclohj0QHd+irZ6D8yd
+YvEcfURX9da4T8nh2eRkX1wNkQopnkg9B4+Rd6NKyOu2Y5UKcvsMBKW7efhCLCE9
+LsxNwYhiss4sgSvS7ApTFXelaSjiVU5IAqfn9y0GgMpTs/xdPGv55oO4k3oo6u41
+N5Gy5F8JhXKH6Ep+8MRn3scpD0bSEFC3wJFjiN/lyQsm86ZcpNZfljJd53lU/PPb
+bqWsy2/VcB+oYBM74DVsOi1svDwjwjw4BHh9HGeXy/Bzs6DqiEqlchFO5CBeI6iu
+YOWMKjOUFjDSojBHGiit18VXuntIdGgFU+qsbARKnssjA4F5ChAgZogPdEq8pngH
+2GvvBUfiED7Yq3xyvQd7Mow2KsMG/6NaXm0hVn19bbfmETDPBwh6bFJvc4fgEEUW
+EYHGOhZGv3/kuT/7CAk0eGrbmsiLctdTx+jTXjL0TowcI38MnCPoXFdveQ0e07Yz
+FFZr3OLXmynoAJp79ebt6Mx6VDxURVv52wJNU0VFTHofIV/Ij8x9vSZCAt8pLs09
+lrkC31ifvN8dd6xIQ7v3NlKuWajBd9dKyvlcYxIzexS7eBbLBMivsBUCAwEAAQ==
+-----END RSA PUBLIC KEY-----
+PMTUDiscovery = yes
+Digest = sha256
+ClampMSS = yes
+IndirectData = yes
+DirectOnly = no
+Address = gw05.freifunk-stuttgart.de
+Port = 1105
