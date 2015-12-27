@@ -1,0 +1,4 @@
+#!/bin/sh
+if [ x"$HOSTNAME" != "x$NODE" ]; then
+  ip route add $SUBNET dev $INTERFACE metric 200 || true
+fi

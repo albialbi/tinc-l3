@@ -1,3 +1,5 @@
 nets.boot
 ffsL3/tinc.conf
+ffsL3/subnet-up
+ffsL3/subnet-down
 ffsL3/rsa_key.priv

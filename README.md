@@ -12,6 +12,8 @@ if [ x"$TINCBASE" != x"/etc/tinc" ]; then
 fi
 if [ ! -e /etc/tinc/ffsL3/tinc.conf ]; then
     ln -s $TINCBASE/ffsL3/tinc.conf.sample /etc/tinc/ffsL3/tinc.conf
+    ln -s $TINCBASE/ffsL3/subnet-up.sample /etc/tinc/ffsL3/subnet-up
+    ln -s $TINCBASE/ffsL3/subnet-down.conf.sample /etc/tinc/ffsL3/subnet-down
 fi
 cd $TINCBASE/ffsL3
 tincd -n ffsL3 -K 4096
