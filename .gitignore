@@ -1,2 +1,3 @@
-tinc.conf
-rsa_key.priv
+ffsL3/tinc.conf
+ffsL3/rsa_key.priv
+nets.boot
